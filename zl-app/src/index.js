@@ -14,13 +14,17 @@ param2：DOM元素对象（这里的root为index.html中写好的一个元素）
 import ReactDOM from 'react-dom';
 
 /*引入HelloWorld组件 */
-import HelloWorld from './helloWorld';
+// import HelloWorld from './helloWorld';
+
+/*引入App组件 */
+import App from './App.jsx'
 // import './index.css';//del*
 // import App from './App';//del*
 // import * as serviceWorker from './serviceWorker';//del*
 
-ReactDOM.render(<HelloWorld name1 = "Cicada1" name2 = "Cicada2"/>,document.getElementById('root'));
+ReactDOM.render(<App />,document.getElementById('root'));
 
+// ReactDOM.render(<HelloWorld name1 = "Cicada1" name2 = "Cicada2"/>,document.getElementById('root'));
 // ReactDOM.render(<HelloWorld name = "Cicada"/>,document.getElementById('root'));
 // ReactDOM.render(<HelloWorld/>,document.getElementById('root'));
 // ReactDOM.render(<div>Hello world!</div>,document.getElementById('root'));
